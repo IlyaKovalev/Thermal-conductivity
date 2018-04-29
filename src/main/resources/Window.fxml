@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="169.0">
+         <children>
+            <GridPane prefHeight="87.0" prefWidth="156.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+
+                <RowConstraints maxHeight="101.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="145.0" minHeight="32.0" prefHeight="53.0" />
+              </rowConstraints>
+               <children>
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#Calculate" prefHeight="38.0" prefWidth="152.0" text="Calculate">
+                     <opaqueInsets>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#clear" prefHeight="26.0" prefWidth="263.0" text="Clear" GridPane.rowIndex="2" />
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </GridPane>
+            <Label text="Stop Criterion" />
+            <TextField fx:id="Criterion" prefHeight="26.0" prefWidth="143.0" promptText=" between 0 and 1">
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin></TextField>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </VBox>
+      <Pane fx:id="pane" prefHeight="400.0" prefWidth="413.0">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Draw on pain!!!" />
+            <Separator layoutX="404.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="17.0" />
+            <Separator layoutX="-5.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="4.0" />
+         </children></Pane>
+   </children>
+</HBox>
