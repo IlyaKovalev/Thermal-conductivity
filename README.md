@@ -1,4 +1,8 @@
 # Thermal-conductivity
+  The finite difference method
+  
+  ftp://ftp.feq.ufu.br/Luis_Claudio/Books/E-Books/Food/Thermal_technologies_in_food_processing/3558x_06.pdf
+
 At first pick  Stop-criterion number.
 It is need for accuracy of computing than less this number than more our model will being accurate and more expensive it will be.
 
