@@ -1,4 +1,6 @@
 # Thermal-conductivity
+
+Моя лаба по численным методам. Даже не верится что это работает.
   The finite difference method
   
   ftp://ftp.feq.ufu.br/Luis_Claudio/Books/E-Books/Food/Thermal_technologies_in_food_processing/3558x_06.pdf
